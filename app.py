@@ -6,7 +6,7 @@ import pandas as pd
 # Set the title of the web page (browser tab)
 st.set_page_config(page_title="House Price Prediction App")
 
-model =  joblib.load("model.pkl")
+joblib.dump(model, 'model.pkl', compress=3)
 
 st.title("House Price Prediction App")
 st.divider()
